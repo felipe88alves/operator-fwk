@@ -1,0 +1,27 @@
+# permissions for end users to view services.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: clusterrole
+    app.kubernetes.io/instance: service-viewer-role
+    app.kubernetes.io/component: rbac
+    app.kubernetes.io/created-by: operator-fwk
+    app.kubernetes.io/part-of: operator-fwk
+    app.kubernetes.io/managed-by: kustomize
+  name: service-viewer-role
+rules:
+- apiGroups:
+  - operatorfwk.felipe88alves
+  resources:
+  - services
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - operatorfwk.felipe88alves
+  resources:
+  - services/status
+  verbs:
+  - get

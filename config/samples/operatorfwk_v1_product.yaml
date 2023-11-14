@@ -1,0 +1,12 @@
+apiVersion: operatorfwk.felipe88alves/v1
+kind: Product
+metadata:
+  labels:
+    app.kubernetes.io/name: product
+    app.kubernetes.io/instance: product-sample
+    app.kubernetes.io/part-of: operator-fwk
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: operator-fwk
+  name: product-sample
+spec:
+  # TODO(user): Add fields here
