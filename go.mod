@@ -1,4 +1,4 @@
-module felipe88alves/operator-fwk
+module github.com/felipe88alves/operator-fwk
 
 go 1.20
 

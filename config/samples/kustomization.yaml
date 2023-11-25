@@ -2,7 +2,4 @@
 resources:
 - operatorfwk_v1_product.yaml
 - operatorfwk_v1_service.yaml
-- operatorfwk_v1alpha1_product.yaml
-- operatorfwk_v1alpha1_service.yaml
-- operatorfwk_v1alpha2_service.yaml
 #+kubebuilder:scaffold:manifestskustomizesamples

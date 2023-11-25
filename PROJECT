@@ -6,7 +6,7 @@ domain: felipe88alves
 layout:
 - go.kubebuilder.io/v4
 projectName: operator-fwk
-repo: felipe88alves/operator-fwk
+repo: github.com/felipe88alves/operator-fwk
 resources:
 - api:
     crdVersion: v1
@@ -15,8 +15,8 @@ resources:
   domain: felipe88alves
   group: operatorfwk
   kind: Product
-  path: felipe88alves/operator-fwk/api/v1alpha1
-  version: v1alpha1
+  path: github.com/felipe88alves/operator-fwk/api/v1
+  version: v1
 - api:
     crdVersion: v1
     namespaced: true
@@ -24,6 +24,6 @@ resources:
   domain: felipe88alves
   group: operatorfwk
   kind: Service
-  path: felipe88alves/operator-fwk/api/v1alpha1
-  version: v1alpha1
+  path: github.com/felipe88alves/operator-fwk/api/v1
+  version: v1
 version: "3"

@@ -24,7 +24,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/log"
 
-	operatorfwkv1alpha1 "felipe88alves/operator-fwk/api/v1alpha1"
+	operatorfwkv1 "github.com/felipe88alves/operator-fwk/api/v1"
 )
 
 // ProductReconciler reconciles a Product object
@@ -57,6 +57,6 @@ func (r *ProductReconciler) Reconcile(ctx context.Context, req ctrl.Request) (ct
 // SetupWithManager sets up the controller with the Manager.
 func (r *ProductReconciler) SetupWithManager(mgr ctrl.Manager) error {
 	return ctrl.NewControllerManagedBy(mgr).
-		For(&operatorfwkv1alpha1.Product{}).
+		For(&operatorfwkv1.Product{}).
 		Complete(r)
 }
